@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  --primaria: rgb(110, 168, 222);
+  --secundaria: rgba(127,135,199,1);
+}
+
+html {
+  align-items: center;
+}
+
+header {
+  flex-direction: row;
+  justify-content: space-between;
+  height: 75px;
+  width: 100%;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.navbar {
+  background: var(--primaria);
+  background: linear-gradient(45deg, var(--primaria) 45%, var(--secundaria) 100%);
+}
+
+/* .navbar-brand, .nav-link {
+  font-size:1.25rem !important;
+} */
+
+main {
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-container {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  padding: 0.8rem;
+  gap: 0.8rem;
+}
+
+.card {
+  gap: 1rem;
+  margin-bottom: 0.8rem;
+  width: 15rem;
+  /* transicao na classe principal pro ease out hover funcionar */
+  transition: all 0.2s ease-in-out;
+}
+
+
+.card:hover {
+  scale: 1.05;
+  box-shadow: -1px 5px 13px 0px rgba(0, 0, 0, 0.50);
+}
+
+.card-title {
+  font-size: 1rem;
+}
+.card-text {
+  font-size: .8rem;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: var(--primaria);
+  border: 2px solid var(--primaria);
+}
