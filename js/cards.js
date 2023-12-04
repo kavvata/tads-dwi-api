@@ -1,10 +1,11 @@
+import { removerAmigo } from "./repositorioMigos.js";
 export {geraCard};
 
 function geraCard(amigo) {
-  const container = document.querySelector(".card-container");
-
+  // nova div
   let card = document.createElement("div");
   card.classList.add("card", "text-bg-light");
+  card.setAttribute("amigoId", amigo.id);
 
   // gera imagem cabecalho do card
   let img = document.createElement("img");
@@ -25,8 +26,14 @@ function geraCard(amigo) {
   email.textContent = `Email: ${amigo.email}`;
 
   let btnRemover = document.createElement("button");
-  btnRemover.classList.add("btn","btn-primary");
+  btnRemover.classList.add("btn", "btn-primary");
   btnRemover.textContent = "Remover";
+
+  btnRemover.addEventListener("click", () => {
+    removerAmigo(amigo.id);
+    let container = document.querySelector(".card-container")
+    container.removeChild(card);
+  });
 
   // constroi card
   body.append(nome, email, btnRemover);
