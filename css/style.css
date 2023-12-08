@@ -101,7 +101,7 @@ footer {
   text-align: center;
 }
 
-.text-footer{
+.text-footer {
   text-align: center;
   background-color: var(--secundaria);
   font-size: 1rem;
@@ -131,4 +131,11 @@ footer nav a::before {
 footer nav a:hover:before{
   visibility: visible;
   width: 100%;
+}
+
+
+@media (max-width: 720px){
+  .sect-cadastro {
+    padding: 10px;
+  }
 }
