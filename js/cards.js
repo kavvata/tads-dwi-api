@@ -13,7 +13,7 @@ function geraCard(amigo) {
   img.src=amigo.avatar;
   img.alt="pfp";
 
-  // gera corpo do card, com nome, email e botao
+  // gera corpo do card, com nome, email e botao de remover
   let body = document.createElement("div");
   body.classList.add("card-body");
 
@@ -30,9 +30,15 @@ function geraCard(amigo) {
   btnRemover.textContent = "Remover";
 
   btnRemover.addEventListener("click", () => {
-    removerAmigo(amigo.id);
+    let sucesso = removerAmigo(amigo.id);
+    
+    if (!sucesso) {
+      return;
+    }
+
     let container = document.querySelector(".card-container")
     container.removeChild(card);
+
   });
 
   // constroi card

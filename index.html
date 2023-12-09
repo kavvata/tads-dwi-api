@@ -32,7 +32,7 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-link" aria-current="page" href="#">Listar amigos</a>
-                        <a class="nav-link" href="#cadastro">Cadastrar amigos</a>
+                        <a class="nav-link" href="#cadastro">Cadastrar amigo</a>
                     </div>
                 </div>
             </div>
@@ -45,21 +45,12 @@
 
     <section class="sect-cadastro mb-3" id="cadastro">
         <h2 class="">Cadastrar novo amigo</h2>
-        <form>
+
+        <form action="https://reqres.in/api/users" method="post">
             <div class="input-group mb-3">
                 <span class="input-group-text">Nome</span>
                 <input id="input-nome" type="text" class="form-control" placeholder="Joao da Silva">
             </div>
-            <div class="input-group mb-3">
-                <input id="input-email" type="text" class="form-control" placeholder="joao.silva"
-                    aria-describedby="basic-addon2">
-                <span class="input-group-text" id="basic-addon2">@reqres.in</span>
-            </div>
-            <div class="input-group mb-3">
-                <label class="input-group-text" for="inputImagem">Imagem</label>
-                <input type="file" class="form-control" id="input-imagem">
-            </div>
-
             <button id="btn-form" class="btn btn-primary">Cadastrar</button>
 
         </form>
@@ -67,13 +58,10 @@
 
     <footer data-bs-theme="dark">
         <nav>
-                <a href="#">Home</a>
-                <a href="#">Features</a>
-                <a href="#">Pricing</a>
-                <a href="#">FAQs</a>
-                <a href="#">About</a>
+                <a href="#">Listar Amigos</a>
+                <a href="#cadastro">Cadastrar Amigo</a>
         </nav>
-        <p class="text-footer">&copy; 2023 Company, Inc</p>
+        <p class="text-footer">&copy; 2023 iMigos, Fake</p>
     </footer>
 
 </body>
