@@ -1,6 +1,6 @@
 export { listarAmigos, removerAmigo };
 
-// documentação da rest api: https://reqres.in/
+// documentação da rest api: https://reqres.in/const nome = document.sele
 
 const listarAmigos = async () => {
   try {

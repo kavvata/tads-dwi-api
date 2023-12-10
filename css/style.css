@@ -112,6 +112,7 @@ footer nav a {
   text-decoration: none;
   margin-right: 15px;
   position: relative;
+  font-weight: bold;
   
   color: #fff;
 }
