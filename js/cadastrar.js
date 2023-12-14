@@ -36,6 +36,6 @@ const handleSubmit = () => {
     return false;
   }
 
-  let novoAmigo = JSON.stringify({ name: nome, job: "friend" });
+  // let novoAmigo = JSON.stringify({ name: nome, job: "friend" });
   return true;
 };
